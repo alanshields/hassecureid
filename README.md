@@ -13,7 +13,7 @@ Use
 
 In your migration make sure you add a string "secure_id"
 
-     class CreateWebcastStaticImageAssets < ActiveRecord::Migration
+     class CreateUser < ActiveRecord::Migration
        def self.up
          create_table :users do |t|
            t.string :secure_id
@@ -24,7 +24,7 @@ In your migration make sure you add a string "secure_id"
        end
 
        def self.down
-         drop_table :webcast_static_image_assets
+         drop_table :users
        end
      end
 
